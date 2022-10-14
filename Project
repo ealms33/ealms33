@@ -1,0 +1,16 @@
+def count_dom_phenotype(genotypes):
+    offspring = 0
+    n = 1
+    for couples in genotypes:
+        if n <= 3:
+            offspring += couples * 2
+            n += 1
+        elif n == 4:
+            offspring += couples * 1.5
+            n += 1
+        elif n == 5:
+            offspring += couples * 1
+            n += 1
+        elif n == 6:
+            offspring += 0
+    return offspring
