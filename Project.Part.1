@@ -1,0 +1,16 @@
+def count_dom_phenotype(genotypes):
+    nos = 0 #nos = number of offspring
+    for index in range (len(genotypes)):
+        if index == 0:
+            nos = (genotypes[0] * 2) #multiply by 2 because of offsprings per couple
+        if index == 1:
+            nos = (genotypes[1] * 2)
+        if index == 2:
+            nos = (genotypes[2] * 2)
+        if index == 3:
+            nos = (genotypes[3] * 2 * .75) #75% chance
+        if index == 4:
+            nos = (genotypes[0] * 2 * .50)
+        if index == 5:
+            nos = 0
+    return nos
