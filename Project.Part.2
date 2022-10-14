@@ -9,6 +9,8 @@ rna2codon={
     'AGU': 'S', 'AGC': 'S', 'AGA': 'R', 'AGG': 'R', 'GGU': 'G', 'GGC': 'G', 'GGA': 'G', 'GGG': 'G',
 }
 def source_rna(protein):
+    '''
+    
     count = 0
     for mRNA in genetic_code.mRNAs():
         if genetic_code[mRNA] in protein:
