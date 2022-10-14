@@ -5,14 +5,3 @@ def splice_rna(dna, intron_list):
     rnaString = dna2rna(dnaString)
     intron_list = rna2codons(rnaString)
     return intron_list
-   
-Another Way
-
-def splice_rna(dna, intron_list):
-    '''
-    
-    rna = dna2rna()
-    for mRNA in intron_list:
-        while mRNA in rna:
-            rna = rna.replace(mRNA,'')
-    result rna
