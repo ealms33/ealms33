@@ -12,9 +12,9 @@ def source_rna(protein):
     '''
     
     count = 0
-    for mRNA in rna2codon.mRNAs():
-        if rna2codon[mRNA] in protein:
+    for key in rna2codon.keys():
+        if rna2codon[key] in protein:
             count += 1
-        elif rna2codon[mRNA] == '':
+        elif rna2codon[key] == '':
             count += len(protein)
     return count % 1000000
